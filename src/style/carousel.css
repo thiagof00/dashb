@@ -1,0 +1,17 @@
+.carousel{
+overflow: hidden;
+}
+.inner{
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+    height: 500px;
+}
+.item-c{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.item-c img{
+width: 100%;
+}
