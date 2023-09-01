@@ -7,6 +7,7 @@ import Logo from './assets/logo.png'
 import { Carousel, CarouselItem } from './components/carousel';
 import { Contracts } from './components/contracts'
 
+// principal
 function App() {
   
   return (
