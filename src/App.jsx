@@ -1,6 +1,11 @@
 import Carousel02 from './assets/carroussel02.jpg'
 import Carousel01 from './assets/carroussel01.png'
+import iconGP1 from './assets/cheap-2.svg'
+import iconGP2 from './assets/shape.svg'
+import iconGP3 from './assets/shape_velocity.svg'
+import Logo from './assets/logo.png'
 import { Carousel, CarouselItem } from './components/carousel';
+import { Contracts } from './components/contracts'
 
 function App() {
   
@@ -8,26 +13,28 @@ function App() {
     <>
     <header>
       <div className="topHeader">
-        <button type="button" className="fy">para você</button>
-
+        <div className="buttonsFor">
+        <button type="button" className="fy pulse-grow-on-hover">Para você</button>
+        <button type="button" className="fc pulse-grow-on-hover">Para empresa</button>
+        </div>
+        
         <div className="buttons">
-            <button>teste de velocidade</button>
-            <button>segunda via <span>do boleto</span></button>
+            <button className='velocityTest pulse-grow-on-hover'/>
+            <button className='ticket pulse-grow-on-hover'/>
         </div>
       </div>
 
       <div className="bottomHeader">
-      <img src="" alt="" className="logo"/>
+      <img src={Logo} alt="" className="logo"/>
 
       <div className="nav">
         <ul>
-          <li>Planos e Serviços</li>
-          <li>Sobre a Bnet</li>
-          <li>Indique um amigo</li>
+          <li><a href="">Início</a></li>
+          <li><a href="">Fibra Empresas</a></li>
+          <li><a href="">Sobre a Bnet</a></li>
+          <li><a href=""> Indique um amigo</a></li>
         </ul>
       </div>
-
-      <button>atendimento</button>
       </div>
     </header>
 
@@ -40,28 +47,37 @@ function App() {
     </Carousel>
 
     <h1>PLANOS DE INTERNET FIBRA</h1>
-    <p>Internet fibra com ultra velocidade que você precisa</p>
+    <p>Internet fibra com ultra velocidade que você precisa.</p>
 
     <div id="goodpoints">
       <div className="point">
-        <img src="" alt="" />
+        <img src={iconGP1} alt="" />
         <span>Preço fixo</span>
+        <div className="description">
         <p>Sua fatura igual todos os meses, sem aquela surpresa no final do mês.</p>
+        </div>
+        
       </div>
       <div className="point">
-        <img src="" alt="" />
+        <img src={iconGP2} alt="" />
         <span>Instalação rápida</span>
+        <div className="description">
         <p>No máximo em 24 horas, aqui você não fica esperando.</p>
+        </div>
       </div>
       <div className="point">
-        <img src="" alt="" />
+        <img src={iconGP3} alt="" />
         <span>Velocidade e garantia</span>
+        <div className="description">
         <p>Garantimos a entrega da velocidade contratada.</p>
+        </div>
       </div>
     </div>
 
     {/* carrossel de planos de internet*/}
-    <div id="plans"></div>
+
+    <Contracts/>
+
     <div id="play">
       <img src="" alt="" />
       <p>De um play e assista os melhores canais de TV, conheço nossos planos</p>

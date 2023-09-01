@@ -1,6 +1,9 @@
+@import "./style/pulseButton.css";
 :root{
   --orange:#FF4900;
+  --orange-bright-01: #ffa300;
   --orange-dark-01:#e74300;
+  --orange-dark-02:#dc4703;
   --blue-button-carousel: #1c15a8;
   --bg-grey-01:#EFEFEF;
   --white:#FFF;
@@ -15,11 +18,138 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body {
+body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    @media(max-width:1080px){
+      font-size: 16px;
+    }
+    @media(max-width:720px){
+      font-size: 0.875rem;
+    }
+    @media(max-width:768px){
+      font-size: 0.875rem;
+    }
+    @media(max-width:766px){
+      font-size: 0.875rem;
+    }
+    @media(max-width:760px){
+      font-size: 0.875rem;
+    }
+}
+button{
+  cursor:pointer;
+}
+header{
+  width: 100%;
+}
+.topHeader{
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-image: url(./assets/bg_topHeader.svg);
+  padding: 0 4rem 0.5rem;
+}
+.bottomHeader{
+  display: flex;
+  justify-content: space-between;
+}
+.bottomHeader img{
+  width: 10rem;
+  margin-left: 5.5rem;
+}
+.bottomHeader .nav ul{
+display: flex;
+justify-content: space-between;
+width:38rem;
+margin:4.5rem 8rem 0 0;
+}
+.bottomHeader .nav ul li{
+  /*estilização da bolinha do li*/
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+.bottomHeader .nav ul li a{
+  /*estilização da bolinha do li*/
+  color: var(--orange);
+  text-decoration: none;
+}
+.bottomHeader .nav ul li a:hover{
+  /*estilização da bolinha do li*/
+  text-decoration: underline;
+}
+.buttonsFor{
+  height: 100%;
+}
+.buttonsFor button{
+  border: none;
+  color: var(--white);
+  background: var(--orange-dark-02);
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   
+  margin-right:1rem;
+
+}
+.topHeader .buttons{
+  height: 100%;
+  width: 16rem;
+
+  display: flex;
+  align-items: center;
+}
+.topHeader .buttons button{
+  height: 60%;
+  width: 100%;
+
+  border: 0;
+}
+.topHeader .buttons .velocityTest{
+  background: url(./assets/velocityTest_bg.svg);
+  background-repeat: no-repeat;
+}
+.topHeader .buttons .ticket{
+  background: url(./assets/ticket_bg.svg);
+  background-repeat: no-repeat;
+}
+
+/*  MAIN  */
+main{
+  text-align: center;
+  color: var(--orange);
+}
+main h1{
+  margin: 2rem 0 1rem 0;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+main #goodpoints{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+main #goodpoints .point{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+}
+main #goodpoints .point img{
+  width: 3rem;
+}
+main #goodpoints .point span{
+  font-weight: bold;
+}
+main #goodpoints .point .description{
+  display: block;
+  width: 80%;
+  font-size: 0.8rem;
 }
 
 code {
