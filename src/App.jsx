@@ -4,8 +4,10 @@ import iconGP1 from './assets/cheap-2.svg'
 import iconGP2 from './assets/shape.svg'
 import iconGP3 from './assets/shape_velocity.svg'
 import Logo from './assets/logo.png'
+import Play from './assets/play.svg'
 import { Carousel, CarouselItem } from './components/carousel';
 import { Contracts } from './components/contracts'
+import { PlansPlay } from './components/plansPlay'
 
 // principal
 function App() {
@@ -80,56 +82,13 @@ function App() {
     <Contracts/>
 
     <div id="play">
-      <img src="" alt="" />
-      <p>De um play e assista os melhores canais de TV, conheço nossos planos</p>
+      <div>
+      <img src={Play} alt="" />
+      <h1>De um play e assista os melhores canais de TV!</h1>
+      </div>
     </div>
-    <div id="plansPlay">
 
-      {/*
-      <div className="planPlay">
-      <div></div>
-      <div className="value">
-      </div>
-      <div className="options">
-      <button>MAIS CANAIS</button>
-      <button>QUERO ASSINAR</button>
-      </div>
-      </div>
-      */}
-      <div className="planPLay">
-        <div className="titles">
-          <h2>BnetPlay</h2>
-          <h3 className="titlePlan"></h3>
-        </div>
-        <div className="channels">
-          <h2></h2>
-          <p></p>
-        </div>
-        <div className="content"></div>
-      </div>
-      <div className="planPLay">
-        <div className="titles">
-          <h2>BnetPlay</h2>
-          <h3 className="titlePlan"></h3>
-        </div>
-        <div className="channels">
-          <h2></h2>
-          <p></p>
-        </div>
-        <div className="content"></div>
-      </div>
-      <div className="planPLay">
-        <div className="titles">
-          <h2>BnetPlay</h2>
-          <h3 className="titlePlan"></h3>
-        </div>
-        <div className="channels">
-          <h2></h2>
-          <p></p>
-        </div>
-        <div className="content"></div>
-      </div>
-    </div>
+    <PlansPlay/>
     </main>
     <div id="box-goodpoints-02">
       <img src="" alt="" />
