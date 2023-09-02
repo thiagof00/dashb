@@ -151,8 +151,21 @@ main #goodpoints .point .description{
   width: 80%;
   font-size: 0.8rem;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#play{
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;  
+}
+#play div{
+  display: flex;
+  width: 50rem;
+}
+#play img{
+  width: 10rem;
+}
+#play h1{
+  margin: 0;
 }
