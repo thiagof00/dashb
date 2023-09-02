@@ -1,0 +1,46 @@
+#plansPlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.planPlay{
+    margin-bottom: 2rem;
+    width: 56rem;
+}
+.order{
+    display: flex;
+    border: 1px solid var(--orange);
+    border-radius: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
+.valourPlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 2rem 1rem;
+}
+.valourPlay .price{
+    font-size:2.5rem;
+    margin-top: 0.5rem;
+}
+.morebuttons{
+    direction: rtl;
+    display: flex;
+}
+.morebuttons button{
+    background-color: var(--orange);
+    width: 10rem;
+    height: 3.5rem;
+    border: 0;
+    border-radius: 0.2rem;
+    color:#FFF;
+
+    font-size: 1rem;
+    padding: 0 0.5rem;
+
+    margin-left: 0.1rem;
+}
+.morebuttons button:hover{
+    filter: brightness(80%);
+}

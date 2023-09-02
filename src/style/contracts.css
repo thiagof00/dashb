@@ -93,4 +93,6 @@ ul li{
       }
     
 }
-
+.contracts button:hover{
+    filter: brightness(80%);
+}
