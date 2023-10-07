@@ -1,4 +1,5 @@
 @import "./style/pulseButton.css";
+@import "./style/responssive.css";
 :root{
   --orange:#FF4900;
   --orange-bright-01: #ffa300;
@@ -168,4 +169,23 @@ main #goodpoints .point .description{
 }
 #play h1{
   margin: 0;
+}
+#box-goodpoints-02{
+  display: flex;
+  flex-direction: row;
+  background-image: url('./assets/goodPoints/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFF;
+
+  padding: 5rem;
+}#box-goodpoints-02 .fiberImg{
+  display: flex;
+  flex-direction:column ;
+}
+#box-goodpoints-02 .fiberImg img{
+  width: 28rem;
+}
+#box-goodpoints-02 .fiberImg div{
+  text-align: center;
 }
